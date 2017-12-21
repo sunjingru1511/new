@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <meta name="viewport" content="width=device-width,initial-scale=1.0,maximum-scale=1.0,minimum-scale=1.0,user-scalable=no">
+	<meta name="format-detection" content="telephone=no,email=no">
+	<meta http-equiv="X-UA-Compatible" content="ie=Edge,chrome=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="app/content/css/style.css">
+    <link rel="stylesheet" href="app/content/icon/iconfont.css">
+    <link rel="stylesheet" href="app/content/css/swiper.min.css">
+</head>
+<body ng-app="app">
+    <div class="box" ng-controller="conController">
+        <header>
+            <span>北京</span>
+            <div>
+                <input type="text" placeholder="目的地/酒店/关键字">
+                <i class="iconfont">&#xe729;</i>
+            </div>
+            <em class="iconfont">&#xe647;</em>
+        </header>
+        <section>
+            <div class="banner">
+                <div class="swiper-container container">
+                    <div class="swiper-wrapper">
+                        <div class="swiper-slide"><img src="app/content/images/1.jpg" alt=""></div>
+                        <div class="swiper-slide"><img src="app/content/images/3.jpg" alt=""></div>
+                        <div class="swiper-slide"><img src="app/content/images/4.jpg" alt=""></div>
+                        <div class="swiper-slide"><img src="app/content/images/5.jpg" alt=""></div>
+                        <div class="swiper-slide"><img src="app/content/images/7.jpg" alt=""></div>
+                    </div>
+                    <div class="swiper-pagination"></div>
+                </div>
+            </div> 
+            <div class="main">
+                 <div class="trans">
+                     <div class="door">
+                        {{door}}
+                     </div>
+                     <div class="hotel">
+                        <div class="hotel-son son">  {{son}}</div>
+                        <div class="hotel-son son1">{{son1}}</div>
+                        <div class="hotel-son son2">{{son2}}</div>
+                        <div class="hotel-son son3">{{son3}}</div>
+                     </div>
+                 </div>
+                 <div ng-repeat="user in piao" class="piao1">
+                     <div class="piao-son">{{user}}</div>
+                 </div>
+            </div>
+        </section>
+        <footer></footer>
+    </div>
+    <script src="app/script/swiper.min.js"></script>
+    <script src="app/script/angular.min.js"></script>
+    <script src="app/app.js"></script>
+    <script src="app/controller/conController.js"></script>
+    <script>
+       var banner = new Swiper(".container", {
+           loop:true,
+           autoplay:2000,
+           pagination:".swiper-pagination",
+           paginationClickable:true,
+           autoplayDisableOnInteraction:false
+       })
+    
+    </script>
+</body>
+</html>

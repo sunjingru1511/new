@@ -1,0 +1,124 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-size: .14rem; }
+
+html, body, .box {
+  width: 100%;
+  height: 100%;
+  box-sizing: border-box; }
+
+html {
+  font-size: 625%; }
+
+i, em {
+  font-style: normal; }
+
+b {
+  font-weight: normal; }
+
+ul li, ol li {
+  list-style: none; }
+
+.box {
+  overflow: hidden;
+  display: flex;
+  flex-direction: column; }
+
+header {
+  width: 100%;
+  height: .4rem;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0 2%; }
+  header span {
+    color: #75D6CC; }
+  header div {
+    display: flex;
+    align-items: center;
+    width: 80%;
+    height: 100%;
+    position: relative; }
+    header div i {
+      position: absolute;
+      top: 28%;
+      left: 10%; }
+    header div input {
+      width: 100%;
+      height: 90%;
+      background: #ccc;
+      border-radius: 15px;
+      border: none;
+      outline: none;
+      padding-left: 20%; }
+  header em {
+    color: #75D6CC; }
+
+section {
+  width: 100%;
+  flex: 1;
+  flex-direction: column;
+  overflow-y: scroll; }
+  section .banner {
+    width: 100%;
+    height: auto; }
+    section .banner .container {
+      width: 100%;
+      height: 2.4rem;
+      overflow: hidden; }
+      section .banner .container img {
+        width: 100%;
+        height: 2.4rem; }
+  section .main {
+    width: 100%;
+    height: auto;
+    margin-top: .05rem;
+    padding: 0 1%;
+    display: flex;
+    flex-direction: column; }
+    section .main .trans {
+      width: 100%;
+      height: auto;
+      display: flex; }
+      section .main .trans .door {
+        width: 33%;
+        height: .9rem;
+        background: #F42E57;
+        color: #fff;
+        text-align: center;
+        line-height: .5rem;
+        font-size: 16px; }
+      section .main .trans .hotel {
+        width: 62%;
+        margin-left: 1%;
+        display: flex;
+        flex-wrap: wrap; }
+        section .main .trans .hotel .hotel-son {
+          width: 50%;
+          height: .45rem;
+          background: #FD4866;
+          color: #fff;
+          text-align: center;
+          line-height: .45rem; }
+        section .main .trans .hotel .son3 {
+          margin-top: .01rem;
+          background: #FF7E65; }
+        section .main .trans .hotel .son2 {
+          margin-top: .01rem;
+          background: #F68A89; }
+        section .main .trans .hotel .son1 {
+          background: #FEA25F; }
+    section .main .piao1 {
+      width: 100%;
+      display: flex; }
+      section .main .piao1 .piao-son {
+        width: 32%;
+        height: .9rem;
+        line-height: .8rem;
+        color: #fff;
+        background: #1CD2B7;
+        text-align: center; }
+
+/*# sourceMappingURL=style.css.map */
